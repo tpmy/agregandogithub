@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+p {
+    line-height: 1.5;
+}
+
+
+.header {
+    background-color: rgba(224, 144, 24, 0.913);
+    color: black;
+    padding: 30px 20px;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+   
+}
+nav {
+    padding-top: 13px;
+}
+.content__navbar {
+    display: flex;
+    justify-items: center;
+}
+.content__navbar li {
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+.logotimeline {
+    width: 250px;
+}
+.long:hover {
+    transform: scale(1.2);
+}
+
+.tituloCont {
+    width: 75%;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 75px;
+
+}
+.acomodo {
+    margin-left: 220px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.courses {
+    margin-top: 40px;
+
+}
+
+.courses__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    align-items: center;
+    justify-items: center;
+}
+.hero {
+    background-image: linear-gradient(45deg, #d09408, #f4ce0e);
+    padding: 50px 20px;
+    color: #e2e8f0;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    width: 75%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+.card__header{
+    position: relative;
+}
+.card__img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.card__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card__description {
+    margin-bottom: 40px;
+}
+.card__link {
+    background-color: #c67926;  
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    
+  }
+  .card:hover {
+    transform: translateY(-15px);
+    }
+
+
+.footer{
+    color: rgb(60, 59, 58);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+.containerCaja {
+    width: 300px;
+    text-align: center;
+    margin-left: 42%;
+    
+}
+span {
+    display: none;
+}
+@media screen and (min-width:324px){
+
+}
+
+@media (max-width: 660px) {
+    .content__navbar {
+     display: none;
+    } 
+    span {
+     display: inline; 
+     font-size: 20px;
+     }
+     .logotimeline {
+        width: 125px;
+    }
+    .containerCaja {
+        margin-left: 5%;
+        width: 150px;
+        text-align: center;
+    }
+ }
+
+@media (max-width: 768px) {
+        .courses__grid {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 30px;
+            gap: 50px;
+
+        }
+        .tituloCont {
+            display: none;
+        }
+    }
+
+    
